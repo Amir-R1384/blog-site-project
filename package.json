@@ -1,0 +1,30 @@
+{
+  "name": "blog-site-project",
+  "version": "0.0.1",
+  "description": "A minimalistic blog site for practicing making full-stack apps",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amir-R1384/blog-site-project.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Amirreza Ranjbar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amir-R1384/blog-site-project/issues"
+  },
+  "homepage": "https://github.com/Amir-R1384/blog-site-project#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.12"
+  }
+}
