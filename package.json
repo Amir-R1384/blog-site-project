@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/Amir-R1384/blog-site-project#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "pug": "^3.0.2"
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
