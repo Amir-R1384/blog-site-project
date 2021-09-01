@@ -1,0 +1,40 @@
+<% if (editing) { %> 
+
+    <form action="/blog/<%= blog?.id %>" method="post" class="d-flex flex-column gap-3">
+
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required class="w-50" value="<%= blog?.title %>">
+    
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description" required class="w-50" value="<%= blog?.description %>">
+    
+        <label for="content">Content</label>
+        <textarea name="content" id="content" cols="30" rows="5" class="w-50"><%= blog?.content %></textarea>
+        <div class="w-50 d-flex gap-2">
+            <button type="submit" class="btn btn-primary w-100">Save</button>
+            <a href="/" class="btn btn-danger w-100">Cancel</a>
+        </div>
+        
+    </form>
+
+<% } else { %> 
+
+    <form action="/blog" method="post" class="d-flex flex-column gap-3">
+
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required class="w-50">
+    
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description" required class="w-50">
+    
+        <label for="content">Content</label>
+        <textarea name="content" id="content" cols="30" rows="5" class="w-50"></textarea>
+        <div class="w-50 d-flex gap-2">
+            <button type="submit" class="btn btn-primary w-100">Save</button>
+            <a href="/" class="btn btn-danger w-100">Cancel</a>
+        </div>
+        
+    </form>
+
+<% } %> 
+
